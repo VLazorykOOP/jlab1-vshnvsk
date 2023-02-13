@@ -1,7 +1,6 @@
 import java.util.*;
 public class Task3 {
     private static void swapColumns(int[][] A, int i, int j) {
-        //меняем элементы в каждой строке
         for(int k = 0; k < A.length; k++) {
             int temp = A[k][i];
             A[k][i] = A[k][j];
