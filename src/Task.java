@@ -11,8 +11,11 @@ public class Task {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Введіть розмірність матриці:");
-        int n = in.nextInt();
+        int n = 21;
+        while(n > 20){
+            System.out.println("Введіть розмірність матриці (до 20):");
+            n = in.nextInt();
+        }
 
         int[][] A = new int[n][n];
 
