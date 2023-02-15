@@ -36,22 +36,21 @@ public class Task2 {
             }
         }
 
-       // ArrayList<Integer> Bb = new ArrayList<>();
-//        for(int i = 0; i < A.length; i++){
-//            for(int j = i + 1; j < A.length; j++){
-//                if(A[i] == A[j]){
-//                    System.out.println("Елементи, які повторюються:");
-//                    System.out.print(A[i]);
-//                    System.out.println();
-//
-//                    System.out.println("Масив В:");
-//
-//                    Bb.add(0, A[i]);
-//                    System.out.print(Bb);
-//                    System.out.println();
-//                }
-//            }
-//        }
+       /* for(int i = 0; i < A.length; i++){
+            for(int j = i + 1; j < A.length; j++){
+                if(A[i] == A[j]){
+                    System.out.println("Елементи, які повторюються:");
+                    System.out.print(A[i]);
+                    System.out.println();
+
+                    System.out.println("Масив В:");
+
+                    B[i] =  A[i];
+                    System.out.print(B[i] + "\t");
+                    System.out.println();
+                }
+            }
+        }*/
     }
 }
 
