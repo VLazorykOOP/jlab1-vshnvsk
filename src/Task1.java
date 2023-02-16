@@ -6,26 +6,38 @@ public class Task1 {
         Scanner in = new Scanner(System.in);
 
         System.out.println("Вхідні дані дійсного типу, результат – дійсного");
-        System.out.print("n=");
-        float n = in.nextFloat();
-        System.out.print("m=");
-        float m = in.nextFloat();
+        float n = 0, m = 0;
+        while( n == m || n*n*m+2 == 0 ){
+            System.out.println("Введіть числа:");
+            System.out.print("n=");
+            n = in.nextFloat();
+            System.out.print("m=");
+            m = in.nextFloat();
+        }
         float y=(n+1)/(n*n*m+2)+(m+n)/(m-n)+n*n*n;
         System.out.println("y=" + y);
 
         System.out.println("Вхідні дані цілого типу, результат – дійсного");
-        System.out.print("n=");
-        int N = in.nextInt();
-        System.out.print("m=");
-        int M = in.nextInt();
+        int N = 0, M = 0;
+        while( N == M || N*N*M+2 == 0 ) {
+            System.out.println("Введіть числа:");
+            System.out.print("n=");
+            N = in.nextInt();
+            System.out.print("m=");
+            M = in.nextInt();
+        }
         float y2=(N+1)/(N*N*M+2)+(M+N)/(M-N)+N*N*N;
         System.out.println("y=" + y2);
 
         System.out.println("Вхідні дані дійсного типу, результат – цілого");
-        System.out.print("n=");
-        double Nn = in.nextDouble();
-        System.out.print("m=");
-        double Mm = in.nextDouble();
+        double Nn = 0, Mm = 0;
+        while ( Nn == Mm || Nn*Nn*Mm+2 == 0 ) {
+            System.out.println("Введіть числа:");
+            System.out.print("n=");
+            Nn = in.nextDouble();
+            System.out.print("m=");
+            Mm = in.nextDouble();
+        }
         int y3 = (int)((Nn+1)/(Nn*Nn*Mm+2)+(Mm+Nn)/(Mm-Nn)+Nn*Nn*Nn);
         System.out.println("y=" + y3);
     }
