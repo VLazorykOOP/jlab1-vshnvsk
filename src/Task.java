@@ -14,6 +14,10 @@ public class Task {
         int n = 21;
         while(n > 20){
             System.out.println("Введіть розмірність матриці (до 20):");
+            while(!in.hasNextFloat()) {
+                in.next();
+                System.out.println("Тільки числа!");
+            }
             n = in.nextInt();
         }
 
@@ -22,6 +26,10 @@ public class Task {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print("A[" + i + "][" + j + "]=");
+                while(!in.hasNextFloat()) {
+                    in.next();
+                    System.out.println("Тільки числа!");
+                }
                 A[i][j] = in.nextInt();
             }
         }
