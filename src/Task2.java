@@ -12,6 +12,10 @@ public class Task2 {
                 System.out.println("Тільки числа!");
             }
             n = in.nextInt();
+            if(n < 0){
+                System.out.println("Не можна від'ємні!!!");
+                n = 201;
+            }
         }
 
         int[] A, B;

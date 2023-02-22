@@ -14,11 +14,15 @@ public class Task {
         int n = 21;
         while(n > 20){
             System.out.println("Введіть розмірність матриці (до 20):");
-            while(!in.hasNextFloat()) {
+            while(!in.hasNextInt()) {
                 in.next();
                 System.out.println("Тільки числа!");
             }
             n = in.nextInt();
+            if(n < 0){
+                System.out.println("Не можна від'ємні!!!");
+                n = 21;
+            }
         }
 
         int[][] A = new int[n][n];
