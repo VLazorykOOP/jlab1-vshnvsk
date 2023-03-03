@@ -19,8 +19,8 @@ public class Task {
                 System.out.println("Тільки числа!");
             }
             n = in.nextInt();
-            if(n < 0){
-                System.out.println("Не можна від'ємні!!!");
+            if(n <= 0){
+                System.out.println("Не можна від'ємні і 0!!!");
                 n = 21;
             }
         }
